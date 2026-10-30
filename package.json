@@ -1,0 +1,40 @@
+{
+  "name": "pagepilot-mern-poc",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server/server.js",
+    "build": "vite build client",
+    "preview": "vite preview",
+    "clean": "rm -rf dist client/dist *.zip",
+    "lint": "tsc --noEmit",
+    "start": "npm run build && node server/server.js",
+    "server": "node server/server.js",
+    "client": "cd client && npm run dev",
+    "test": "node test/api.test.js",
+    "zip": "zip -r pagepilot-mern-poc.zip . -x 'node_modules/*' 'client/node_modules/*' 'server/node_modules/*' 'dist/*' 'client/dist/*' '.git/*' '.aistudio/*' '*.zip'"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "ahdjs": "^0.0.232",
+    "cors": "^2.8.6",
+    "dompurify": "^3.4.17",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "mongoose": "^9.11.4",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "react-router-dom": "^7.18.5",
+    "vite": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2"
+  }
+}

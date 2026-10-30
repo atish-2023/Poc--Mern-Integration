@@ -1,0 +1,6 @@
+{
+  "name": "PagePilot MERN Integration POC",
+  "description": "Complete, beginner-friendly MERN stack proof of concept demonstrating dynamic route integration with PagePilot, MongoDB caching, and AHDjs tours.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
